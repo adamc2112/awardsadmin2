@@ -289,7 +289,8 @@
                                                 </div>
                                                 <div class="tab-pane fade" id="settings-pills">
                                                 <h4>E-Mail</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    <p><button type="button" class="btn btn-outline btn-primary">Send</button>Welcome E-Mail</p>
+                                                    <p><button type="button" class="btn btn-outline btn-primary">Send</button>Username/Password E-Mail</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -324,7 +325,89 @@
                                         <td>Yangaroo</td>
                                         <td>YES</td>
                                         <td>
-                                            <button type="button" class="btn btn-outline btn-default">Edit</button>
+                                            <button type="button" class="btn btn-outline btn-default" data-toggle="modal" data-target="#edituser">Edit</button>
+                                            <div class="modal fade" id="edituser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Create New Judge</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul class="nav nav-pills">
+                                                <li><a href="#profile-pills" data-toggle="tab">Contact</a>
+                                                </li>
+                                                <li><a href="#messages-pills" data-toggle="tab">Categories</a>
+                                                </li>
+                                                <li><a href="#settings-pills" data-toggle="tab">E-Mail</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in active" id="profile-pills">
+                                                    <br>
+                                                    <form role="form">
+                                                        <div class="form-group">
+                                                            <label>First Name</label>
+                                                            <input class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Last Name</label>
+                                                            <input class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>E-Mail</label>
+                                                            <input class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Passwordl</label>
+                                                            <input class="form-control">
+                                                            <button type="button" class="btn btn-outline btn-default">Generate</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="messages-pills">
+                                                <br>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Ballot</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Ballot One</td>
+                                                                        <td><button type="button" class="btn btn-default">Assign</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Ballot Two</td>
+                                                                        <td><button type="button" class="btn btn-default">Assign</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Ballot Threet</td>
+                                                                        <td><button type="button" class="btn btn-default">Assign</button></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="settings-pills">
+                                                <h4>E-Mail</h4>
+                                                    <p><button type="button" class="btn btn-outline btn-primary">Send</button>Welcome E-Mail</p>
+                                                    <p><button type="button" class="btn btn-outline btn-primary">Send</button>Username/Password E-Mail</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
                                             <button type="button" class="btn btn-outline btn-default">Send Credentials</button>
                                         </td>
                                     </tr>
