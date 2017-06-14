@@ -170,7 +170,23 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <button type="button" class="btn btn-outline btn-primary">Create Round</button>
+                            <button type="button" class="btn btn-outline btn-primary" data-toggle="modal" data-target="#createround">Create Round</button>
+                            <div class="modal fade" id="createround" tabindex="-1" role="dialog" aria-labelledby="createround" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -193,7 +209,7 @@
                                         <td>2017-06-12</td>
                                         <td>2017-06-24</td>
                                         <td>
-                                            <button type="button" class="btn btn-outline btn-primary">Edit Round</button>
+                                            <button type="button" class="btn btn-outline btn-default">Edit Round</button>
                                             <button type="button" class="btn btn-outline btn-danger">Remove Round</button>
                                         </td>
                                         
@@ -205,7 +221,7 @@
                                         <td>2017-07-02</td>
                                         <td>None</td>
                                         <td>
-                                            <button type="button" class="btn btn-outline btn-primary">Edit Round</button>
+                                            <button type="button" class="btn btn-outline btn-default">Edit Round</button>
                                             <button type="button" class="btn btn-outline btn-danger">Remove Round</button>
                                         </td>
                                     </tr>
