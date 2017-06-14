@@ -185,17 +185,38 @@
                                                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Round #">
                                                   </div>
                                             </form>
+                                            <p>Vote Type</p>
                                             <div class="dropdown">
                                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                    Vote Type
+                                                    Select Vote Type
                                                     <span class="caret"></span>
                                                 </button>
                                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                                    <li>Unweighted</li>
-                                                    <li>Weighted</li>
-                                                    <li>Write-Ins</li>
-                                                    <li>No Voting</li>
+                                                    <li><a href="#">Unweighted</a></li>
+                                                    <li><a href="#">Weighted</a></li>
+                                                    <li><a href="#">Write-Ins</a></li>
+                                                    <li><a href="#">No Voting</a></li>
                                                 </ul>
+                                            </div>
+                                            <p><strong>Round Open Date</strong></p>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class='col-sm-6'>
+                                                        <div class="form-group">
+                                                            <div class='input-group date' id='datetimepicker1'>
+                                                                <input type='text' class="form-control" />
+                                                                <span class="input-group-addon">
+                                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <script type="text/javascript">
+                                                        $(function () {
+                                                            $('#datetimepicker1').datetimepicker();
+                                                        });
+                                                    </script>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
