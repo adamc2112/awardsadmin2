@@ -199,6 +199,7 @@
                                                     </button>
                                                 </span>
                                             </div>
+                                            <br>
                                             <p><strong>Assign Group</strong></p>
                                             <div class="input-group custom-search-form">
                                                 <input type="text" class="form-control" placeholder="Search Group">
@@ -211,7 +212,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            <button type="button" class="btn btn-primary">Save Bsllot</button>
                                         </div>
                                     </div>
                                     <!-- /.modal-content -->
@@ -238,28 +239,70 @@
                                         <td>Currie</td>
                                         <td><a href="mailto:adam.currie@yangaroo.com">adam.currie@yangaroo.com</a></td>
                                         <td>Yangaroo</td>
-                                        <td><button type="button" class="btn btn-default">Edit Ballot</button></td>
+                                        <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#editballot">Edit Ballot</button></td>
+                                        <div class="modal fade" id="editballot" tabindex="-1" role="dialog" aria-labelledby="editballot" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                        <h4 class="modal-title" id="myModalLabel">Edit Ballots</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="table-responsive">
+                                                        <table class="table table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Ballot</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Ballot One</td>
+                                                                        <td><button type="button" class="btn btn-danger">Remove</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Ballot Two</td>
+                                                                        <td><button type="button" class="btn btn-default">Assign</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Ballot Threet</td>
+                                                                        <td><button type="button" class="btn btn-default">Assign</button></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                        </table>
+                                                    </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                    </div>
+                                                </div>
+                                                <!-- /.modal-content -->
+                                            </div>
+                                            <!-- /.modal-dialog -->
+                                        </div>
                                     </tr>
                                     <tr>
                                         <td>Ricardo</td>
                                         <td>Martinez</td>
                                         <td><a href="mailto:ricardo.martinez@yangaroo.com">ricardo.martinez@yangaroo.com</a></td>
                                         <td>Yangaroo</td>
-                                        <td><button type="button" class="btn btn-default">Edit Ballot</button></td>
+                                        <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#editballot">Edit Ballot</button></td>
                                     </tr>
                                     <tr>
                                         <td>Nino</td>
                                         <td>Dragic</td>
                                         <td><a href="mailto:Nino.Dragic@yangaroo.com">Nino.Dragic@yangaroo.com</a></td>
                                         <td>Yangaroo</td>
-                                        <td><button type="button" class="btn btn-default">Edit Ballot</button></td>
+                                        <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#editballot">Edit Ballot</button></td>
                                     </tr>
                                     <tr>
                                         <td>Richard</td>
                                         <td>Klosa</td>
                                         <td><a href="mailto:richard.klosa@yangaroo.com">richard.klosa@yangaroo.com</a></td>
                                         <td>Yangaroo</td>
-                                        <td><button type="button" class="btn btn-default">Edit Ballot</button></td>
+                                        <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#editballot">Edit Ballot</button></td>
                                     </tr>
                                 </tbody>
                             </table>
